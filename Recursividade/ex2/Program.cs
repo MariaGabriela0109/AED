@@ -10,12 +10,9 @@ namespace ex2
     {
         static double CalcularSerie(int n)
         {
-            double resp;
             if (n == 1)
-                resp = 2;
-            else
-                resp = CalcularSerie(n-1) + (1.0 + n * n) / n ;
-            return resp;
+                return 2;
+            return CalcularSerie(n-1) + (1.0 + n * n) / n ;
         }
         static void Main(string[] args)
         {

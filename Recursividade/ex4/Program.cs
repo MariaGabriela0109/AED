@@ -4,21 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ex1
+namespace ex4
 {
     internal class Program
     {
-        static int Poten(int a, int n)
+        static void ToBinari(int n)
         {
             if (n == 0)
-                return 1;
-            return Poten(a, n - 1) * a;
-
+                return;
+            ToBinari(n / 2);
+            Console.Write(n % 2);
         }
         static void Main(string[] args)
         {
-            int r = Poten(4, 3);
-            Console.WriteLine(r);
+            ToBinari(12);
         }
     }
 }

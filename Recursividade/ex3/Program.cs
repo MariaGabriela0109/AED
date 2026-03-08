@@ -10,12 +10,9 @@ namespace ex3
     {
         static int SomaIntervalo(int m, int n)
         {
-            int resp;
             if (m == n)
-                resp = m;
-            else
-                resp = m + SomaIntervalo(m + 1, n);
-            return resp;
+                return m;
+            return m + SomaIntervalo(m + 1, n);
         }
         static void Main(string[] args)
         {
