@@ -2,4 +2,5 @@
   <Project Path="ConsoleApp1/ex1.csproj" Id="6abd826a-0840-4a4d-9659-3a91c8fb5912" />
   <Project Path="ex2/ex2.csproj" Id="6e77331d-a0b8-4dc6-b167-47482bb0156a" />
   <Project Path="menuDicionario/menuDicionario.csproj" Id="cb227be5-24e5-4221-924b-e778ee306c1a" />
+  <Project Path="menuDicionarioNoClass/menuDicionarioNoClass.csproj" Id="3c0b79db-5038-48ab-813d-05e1fbe6cc64" />
 </Solution>
