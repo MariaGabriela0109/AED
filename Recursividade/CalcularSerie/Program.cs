@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CalcularSerie
+{
+    internal class Program
+    {
+        static double CalcularSerie(int n)
+        {
+            if (n == 1)
+                return 2;
+            return CalcularSerie(n - 1) + ((1.0 + (n * n)) / n);
+
+        }
+        static void Main(string[] args)
+        {
+            double aux = CalcularSerie(10);
+            Console.WriteLine(aux);
+        }
+    }
+}

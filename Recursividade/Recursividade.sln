@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.3.11505.172 d18.3
+VisualStudioVersion = 18.3.11505.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex1", "ex1\ex1.csproj", "{FE92A0DD-9C59-4347-9659-8D45FBE10AB4}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex3", "ex3\ex3.csproj", "{66EFED56-C787-4A58-9348-FEBDC9CA2C6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex4", "ex4\ex4.csproj", "{08926197-9583-41AB-9F26-9D9E6B4CA78E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularSerie", "CalcularSerie\CalcularSerie.csproj", "{AA17BD86-19B7-4934-8F7F-54FCF6672091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{08926197-9583-41AB-9F26-9D9E6B4CA78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08926197-9583-41AB-9F26-9D9E6B4CA78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08926197-9583-41AB-9F26-9D9E6B4CA78E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA17BD86-19B7-4934-8F7F-54FCF6672091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA17BD86-19B7-4934-8F7F-54FCF6672091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA17BD86-19B7-4934-8F7F-54FCF6672091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA17BD86-19B7-4934-8F7F-54FCF6672091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
