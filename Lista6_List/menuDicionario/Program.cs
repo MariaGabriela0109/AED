@@ -1,46 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace menuDicionario
 {
     public class Dicionario
     {
-        public string palavra;
-        public string significado;
-
-        public Dicionario(string palavra, string significado)
-        {
-            this.palavra = palavra;
-            this.significado = significado;
-        }
 
         Dictionary<string,string> dict = new Dictionary<string,string>();
 
-        public void Cadastrar()
+        public void Cadastrar(string palavra, string significado)
         {
-            if (dict.ContainsKey(palavra))
-            {
-
-            }
-            else
+            if (!dict.ContainsKey(palavra))
             {
                 dict.Add(palavra, significado);
             }
               
         }
-        public void Traduzir()
+        public void Traduzir(string palavra)
         {
-            if (dict.ContainsKey(palavra))
-            {
-                Console.WriteLine(dict[palavra]);
-            }
-            else
+            if (!dict.ContainsKey(palavra))
             {
                 Console.WriteLine("Palavra não encontrada");
+                return;
             }
+            Console.WriteLine(dict[palavra]);
         }
 
     }
@@ -48,17 +31,14 @@ namespace menuDicionario
     {
         static void Main(string[] args)
         {
-            Dicionario dict1 = new Dicionario("casa", "house");
-            Dicionario dict2 = new Dicionario("carro", "car");
+            Dicionario dict1 = new Dicionario();
 
-            dict1.Cadastrar();
-            dict1.Traduzir();
+            dict1.Cadastrar("casa", "house");
+            dict1.Traduzir("casa");
 
             Console.WriteLine();
 
-            dict2.Cadastrar(); 
-            dict2.Traduzir();
-
+           
 
 
         }
