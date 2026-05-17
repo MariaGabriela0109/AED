@@ -55,11 +55,58 @@ namespace ex4
                 return temp;
             }            
         }
+
+        public void Mostrar()
+        {
+            int i = primeiro;
+            while(i != ultimo)
+            {
+                Console.WriteLine($"Arquivo: {array[i].nome} - Páginas: {array[i].tam}");
+                i = (i + 1) % array.Length;
+            }
+        }
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            Fila fila = new Fila(100);
+            int op;
+            string nome;
+            int tam;
+            Console.WriteLine("Escolha: 1. Inserir - 2. Remover - 3. Mostrar - 4. Encerrar o programa:");
+            op = int.Parse(Console.ReadLine());
+            while(op != 4)
+            {
+                switch (op)
+                {
+                    case 1:
+                        Console.WriteLine("Digite nome e quantidade de paginas do arquivo: ");
+                        nome = Console.ReadLine();
+                        tam = int.Parse(Console.ReadLine());
+                        Arquivo arq = new Arquivo(nome, tam);
+                        fila.Inserir(arq);
+                        break;
+                    case 2:
+                        Arquivo temp;
+                        temp = fila.Remover();
+                        Console.WriteLine($"O arquivo {temp.nome} foi removido");
+                        break;
+                    case 3:
+                        fila.Mostrar();
+                        break;
+                    case 4:
+                        Console.WriteLine("Encerrando o programa...");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        break;
+
+                }
+                Console.WriteLine("Escolha: 1. Inserir - 2. Remover - 3. Mostrar - 4. Encerrar o programa:");
+                op = int.Parse(Console.ReadLine());
+            }
+            
         }
     }
 }

@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="ex1/ex1.csproj" />
-  <Project Path="ex3/ex3.csproj" />
+  <Project Path="ex1/ex1.csproj" Id="fdca35bc-e2c1-48d1-aa51-338b01b60807" />
+  <Project Path="ex3/ex3.csproj" Id="a3b62d0c-1c0f-481e-8d30-6e14f6cc2bde" />
+  <Project Path="ex4/ex4.csproj" Id="5d9bc0e9-b8b7-455e-bacd-e55038567d1f" />
 </Solution>

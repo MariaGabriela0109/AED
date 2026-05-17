@@ -27,12 +27,17 @@ namespace ex3
                 if (array[i] == nome)
                 {
                     j = (i + 1) % array.Length;
+                    while (j != ultimo)
+                    {
+                        cont++;
+                        j = (j + 1) % array.Length;
+                    }
                 }
-                while(j != ultimo)
+                else
                 {
-                    cont++;
-                    j = (j + 1) % array.Length;
+                    throw new Exception("Nome não se encontra na fila.");
                 }
+                
                 i = (i + 1) % array.Length;
             }
             return cont;
