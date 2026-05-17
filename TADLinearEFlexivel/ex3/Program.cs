@@ -12,11 +12,33 @@ namespace ex3
         public int primeiro;
         public int ultimo;
 
+        public Fila(int tamanho)
+        {
+            array = new string[tamanho + 1];
+            primeiro = ultimo = 0;
+        }
 
         public int ContarSucessores(string nome)
         {
-           
+            int cont = 0,  i = primeiro;
+            int j = 0;
+            while (i != ultimo)
+            {
+                if (array[i] == nome)
+                {
+                    j = (i + 1) % array.Length;
+                }
+                while(j != ultimo)
+                {
+                    cont++;
+                    j = (j + 1) % array.Length;
+                }
+                i = (i + 1) % array.Length;
+            }
+            return cont;
+
         }
+
     }
     internal class Program
     {
