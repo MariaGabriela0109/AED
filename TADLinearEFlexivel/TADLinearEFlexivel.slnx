@@ -3,4 +3,5 @@
   <Project Path="ex2/ex2.csproj" Id="0d4ec520-4c74-4348-a8e7-84a22945d110" />
   <Project Path="ex3/ex3.csproj" Id="a3b62d0c-1c0f-481e-8d30-6e14f6cc2bde" />
   <Project Path="ex4/ex4.csproj" Id="5d9bc0e9-b8b7-455e-bacd-e55038567d1f" />
+  <Project Path="ex5/ex5.csproj" Id="869c19fb-161b-4a5a-abe6-370c308bbbf7" />
 </Solution>
